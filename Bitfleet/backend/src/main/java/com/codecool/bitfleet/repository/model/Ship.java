@@ -1,5 +1,6 @@
 package com.codecool.bitfleet.repository.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -71,7 +72,7 @@ public class Ship {
     public Ship() {}
 
     public Ship(String name, ShipType type, int hp, int la, int ha, int ta, int org,
-                double vet, boolean isRepairing, boolean isSunken) {
+                double vet, boolean isRepairing, boolean isSunken, int value) {
         this.name = name;
         this.type = type;
         this.hp = hp;
@@ -82,6 +83,7 @@ public class Ship {
         this.vet = vet;
         this.isRepairing = isRepairing;
         this.isSunken = isSunken;
+        this.value = value;
     }
 
 
