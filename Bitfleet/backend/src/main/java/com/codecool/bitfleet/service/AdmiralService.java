@@ -29,4 +29,9 @@ public class AdmiralService {
         return admirals.stream().map(AdmiralDTO::fromAdmiral).collect(Collectors.toList());
     }
 
+    public AdmiralDTO getAdmiralById(long admiralId) {
+        Admiral admiral = admiralRepository.findById(admiralId).orElseThrow(UserNotFoundException::new);
+        return AdmiralDTO.fromAdmiral(admiral);
+    }
+
 }
