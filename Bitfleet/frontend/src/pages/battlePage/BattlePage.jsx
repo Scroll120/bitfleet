@@ -28,11 +28,26 @@ export default function BattlePage() {
 
     return (
 
-        <div>
-            <p>Battle</p>
+        <section>
             {battleData && (
-                <p>{battleData.playerFleet.name}, {battleData.enemyFleet.name}</p>
+                <div>
+                    <div>
+                        <p>Fleet Name: {battleData.playerFleet.name}</p>
+                        <p>Fleet Size: {battleData.playerFleet.ships.length}</p>
+                        <p>Organisation: {battleData.playerFleet.org}</p>
+                        <p>Screening Efficiency: {battleData.playerFleet.screening}</p>
+                        <p>Fleet Value: {battleData.playerFleet.value}</p>
+                    </div>
+                    <div>
+                        <p>Fleet Name: {battleData.enemyFleet.name}</p>
+                        <p>Fleet Size: {battleData.enemyFleet.ships.length}</p>
+                        <p>Organisation: {battleData.enemyFleet.org}</p>
+                        <p>Screening Efficiency: {battleData.enemyFleet.screening}</p>
+                        <p>Fleet Value: {battleData.enemyFleet.value}</p>
+                    </div>
+                    <p>{battleData.battleReports}</p>
+                </div>
             )}
-        </div>
+        </section>
     )
 }

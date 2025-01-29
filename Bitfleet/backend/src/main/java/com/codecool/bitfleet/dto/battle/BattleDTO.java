@@ -1,6 +1,11 @@
 package com.codecool.bitfleet.dto.battle;
 
-import com.codecool.bitfleet.dto.Fleet.FleetDTO;
+import com.codecool.bitfleet.dto.Fleet.FleetDetailedDTO;
 
-public record BattleDTO(FleetDTO playerFleet, FleetDTO enemyFleet) {
+import java.util.List;
+
+public record BattleDTO(
+        FleetDetailedDTO playerFleet,
+        FleetDetailedDTO enemyFleet,
+        List<String> battleReports) {
 }

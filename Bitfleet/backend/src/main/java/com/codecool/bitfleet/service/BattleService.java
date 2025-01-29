@@ -1,6 +1,6 @@
 package com.codecool.bitfleet.service;
 
-import com.codecool.bitfleet.dto.Fleet.FleetDTO;
+import com.codecool.bitfleet.dto.Fleet.FleetDetailedDTO;
 import com.codecool.bitfleet.dto.battle.BattleDTO;
 import com.codecool.bitfleet.exceptions.FleetNotFoundException;
 import com.codecool.bitfleet.repository.FleetRepository;
@@ -28,7 +28,13 @@ public class BattleService {
 
         if (enemyFleets.isEmpty()) throw new FleetNotFoundException();
 
+        String baseReport = "No engagement yet.";
+        String test = "Ships are approaching another.";
+
         Fleet enemyFleet = enemyFleets.get(new Random().nextInt(enemyFleets.size()));
-        return new BattleDTO(FleetDTO.fromFleet(playerFleet), FleetDTO.fromFleet(enemyFleet));
+        return new BattleDTO(
+                FleetDetailedDTO.fromFleet(playerFleet),
+                FleetDetailedDTO.fromFleet(enemyFleet),
+                List.of(baseReport, test));
     }
 }
