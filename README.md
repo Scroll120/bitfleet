@@ -3,7 +3,7 @@
   <h3 align="center">Bitfleet</h3>
 
   <p align="center">
-    placeholder
+    A Springboot Project for Naval Enthusiasts!
   </p>
 </div>
 
@@ -28,9 +28,12 @@
     </li>
     <li>
       <a href="#running-the-app">Runnig the app</a>
-      <ul>
-        <li><a href="#with-docker">With Docker</a></li>
-      </ul>
+    </li>
+    <li>
+      <a href="#features">Features</a>
+    </li>
+    <li>
+      <a href="#contribute">Contribute</a>
     </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -41,7 +44,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-placeholder
+Bitfleet is a petproject that focuses on naval battle simulations, ship and fleet management, from the comfort of your own web browers!
+Utilizing algorithms with added randomness to calculate naval engagemenets between fleets, Bitfleet is a passion project that strives to create a fun game inspired by the likes of Battleship!
 
 ### Built With
 
@@ -57,14 +61,15 @@ placeholder
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To get a local copy up of the app and run it smoothly follow these simple guides!
 
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-* IDE with JDK version of 22 and Java version of 17.
-* SQL cabale Database (Postgre recommended) 
+* IDE with JDK version of 22 and Java version of 17
+* SQL cabale Database (Postgre recommended)
+* NPM, required for running the frontend locally
 
 ### Installation
 
@@ -73,23 +78,57 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/Scroll120/bitfleet.git
    ```
 
-2. ---
+2. Open the backend through the pom.xml, and set up your IDE environmental variables!
+   * DB_URL - The url by which the application can connect to your datbase (recommending PostgreSql!)
+   * DB_USERNAME - The username to log into the database
+   * DB_PASSWORD - The password to log into the database
+  
+3. Navigate to the ./frontend folder, and install the node packages!
+   ```sh
+   npm install
+   ```
    
 <!-- RUNNING THE APP -->
 ## Running the app
-1. -----
+1. Start the backend by launching the BitfleetApplication class!
+
+2. Start the frontend by executing npm run dev in the ./frontend folder!
+   ```sh
+   npm run dev
+   ```
+3. The backend runs on [http://localhost:8080](http://localhost:8080)
+4. The frontend runs on [http://localhost:5173](http://localhost5173)
+
+5. Dummy User provided under:
+   * Username: John Doe 
+   * Password: 123
 
 <!-- FEATURES -->
 ## Features
-- placeholder
+- Storing and selecting your ships and fleets!
+- Engaging randomly selected fleets of other players!
+
+<!-- CONTRIBUTE -->
+## Contribute
+
+If you'd like to contribute to the project feel free to do so! Open Source projects are meant to be shared with others!
+1. Fork the Project
+2. Create your Own Feature Branch
+3. Commit your Changes
+4. Push to your branch
+5. Create a Pull Request for review!
 
 <!-- CONTACT -->
 ## Contact
 
 György Kocsis - [GitHub Profile](https://github.com/Scroll120)
 
-
 Project Link: [https://github.com/Scroll120/bitfleet](https://github.com/Scroll120/bitfleet)
+
+<!-- License -->
+## License
+
+Distributed under the Apache-2.0 License!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
