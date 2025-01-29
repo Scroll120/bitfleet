@@ -7,6 +7,7 @@
   </p>
 </div>
 
+![alt text](https://i.imgur.com/mzBTJni.png)
 
 
 <!-- TABLE OF CONTENTS -->
@@ -31,6 +32,9 @@
     </li>
     <li>
       <a href="#features">Features</a>
+    </li>
+    <li>
+      <a href="#roadmap">Roadmap</a>
     </li>
     <li>
       <a href="#contribute">Contribute</a>
@@ -107,6 +111,19 @@ Before you begin, ensure you have met the following requirements:
 ## Features
 - Storing and selecting your ships and fleets!
 - Engaging randomly selected fleets of other players!
+
+<!-- ROADMAP -->
+## Roadmap
+
+Below is a list of completed and planned features for the project. Checkmarks indicate implemented features:
+- [x] Storing and handling Admirals (Users), Ships, and Fleets
+- [x] Selecting and randomizing opposing fleets
+- [ ] Battle Algorithm
+- [ ] Managing Fleet and Ship Statuses
+- [ ] Enchanced Frontend with responsive single-window design
+- [ ] Authentications
+- [ ] Deploy the app using Docker and make it publicly accessible
+- [ ] Implment a fleshed-out ship designer
 
 <!-- CONTRIBUTE -->
 ## Contribute
