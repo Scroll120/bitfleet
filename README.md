@@ -45,7 +45,12 @@ placeholder
 
 ### Built With
 
+* ![JavaScript][JavaScript-url]
+* ![React][React-url]
+* ![HTML5][HTML5-url]
 * ![Springboot][boot-url]
+* ![Postgre][postgre-url]
+* ![CSS3][CSS3-url]
 
 
 
@@ -58,7 +63,8 @@ To get a local copy up and running follow these simple steps.
 
 Before you begin, ensure you have met the following requirements:
 
-* 
+* IDE with JDK version of 22 and Java version of 17.
+* SQL cabale Database (Postgre recommended) 
 
 ### Installation
 
@@ -87,4 +93,9 @@ Project Link: [https://github.com/Scroll120/bitfleet](https://github.com/Scroll1
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[React-url]: https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black
+[JavaScript-url]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[postgre-url]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[HTML5-url]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[CSS3-url]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [boot-url]: https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white
