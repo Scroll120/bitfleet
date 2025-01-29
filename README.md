@@ -53,12 +53,7 @@ Utilizing algorithms with added randomness to calculate naval engagemenets betwe
 
 ### Built With
 
-* ![JavaScript][JavaScript-url]
-* ![React][React-url]
-* ![HTML5][HTML5-url]
-* ![Springboot][boot-url]
-* ![Postgre][postgre-url]
-* ![CSS3][CSS3-url]
+![JavaScript][JavaScript-url] ![React][React-url] ![HTML5][HTML5-url] ![Springboot][boot-url] ![Postgre][postgre-url] ![CSS3][CSS3-url]
 
 
 
