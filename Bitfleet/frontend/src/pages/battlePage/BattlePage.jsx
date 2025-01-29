@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 export default function BattlePage() {
     const {id} = useParams();
     const [battleData, setBattleData] = useState(null);
+    const [battleLog, setBattleLog] = useState([]);
 
     useEffect(() => {
         if (!id) return;
@@ -24,6 +25,13 @@ export default function BattlePage() {
         })
         const data = await response.json();
         setBattleData(data);
+        setBattleLog(data.battleReports);
+    }
+
+    const makeTurn = async () => {
+        // fetch
+
+        
     }
 
     return (
@@ -45,7 +53,12 @@ export default function BattlePage() {
                         <p>Screening Efficiency: {battleData.enemyFleet.screening}</p>
                         <p>Fleet Value: {battleData.enemyFleet.value}</p>
                     </div>
-                    <p>{battleData.battleReports}</p>
+                    <h3>Battle Log</h3>
+                    <ul>
+                        {battleLog.map((log, index) => (
+                            <li key={index}>{log}</li>
+                        ))}
+                    </ul>
                 </div>
             )}
         </section>

@@ -72,7 +72,7 @@ public class Fleet {
             return 1.0;
         }
 
-        double actualRatio = (double) screeningShips / (4 * screeningShips);
+        double actualRatio = (double) screeningShips / (4 * capitalShips);
         return Math.min(actualRatio, 1.0);
     }
 
