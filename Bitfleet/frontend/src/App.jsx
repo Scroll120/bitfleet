@@ -3,6 +3,7 @@ import HomePage from './pages/homePage/HomePage.jsx';
 import NavigationBar from "./components/NavigationBar/NavigationBar.jsx";
 import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
+import BattlePage from "./pages/battlePage/BattlePage.jsx";
 
 function Layout() {
   return (
@@ -34,6 +35,10 @@ function App() {
         {
           path: "/admiral/:id",
           element: <ProfilePage/>
+        },
+        {
+          path: "/battle",
+          element: <BattlePage/>
         }
       ],
     },

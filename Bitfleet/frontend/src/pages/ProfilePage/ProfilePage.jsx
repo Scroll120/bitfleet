@@ -1,12 +1,13 @@
 import "./ProfilePage.css";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 
 
 export default function ProfilePage() {
     const [userData, setUserData] = useState(null);
     const {id} = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetchUserData();
@@ -23,11 +24,21 @@ export default function ProfilePage() {
         setUserData(data);
     }
 
+    const startBattle = (fleetId) => {
+        navigate("/battle", {state: { fleetId }});
+    };
+
     return (
         <section className="userPage">
             {userData && (
                 <div>
                     <p>{userData.username}</p>
+                    {userData.fleets.map((fleet) => (
+                        <div key={fleet.id}>
+                            <p>{fleet.name}</p>
+                            <button onClick={() => startBattle(fleet.id)}>Battle</button>
+                        </div>
+                    ))}
                 </div>
             )}
         </section>
