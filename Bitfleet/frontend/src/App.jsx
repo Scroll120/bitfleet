@@ -1,6 +1,8 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import HomePage from './pages/homePage/HomePage.jsx';
 import NavigationBar from "./components/NavigationBar/NavigationBar.jsx";
+import LoginPage from "./pages/LoginPage/LoginPage.jsx";
+import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
 
 function Layout() {
   return (
@@ -25,6 +27,14 @@ function App() {
           path: "/",
           element: <HomePage/>
         },
+        {
+          path: "/login",
+          element: <LoginPage/>
+        },
+        {
+          path: "/admiral/:id",
+          element: <ProfilePage/>
+        }
       ],
     },
   ]);

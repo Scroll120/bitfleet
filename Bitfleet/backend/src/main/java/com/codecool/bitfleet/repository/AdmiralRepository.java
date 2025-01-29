@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AdmiralRepository extends JpaRepository<Admiral, Long> {
+    Admiral findByUsername(String userName);
 }
