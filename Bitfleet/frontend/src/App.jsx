@@ -37,7 +37,7 @@ function App() {
           element: <ProfilePage/>
         },
         {
-          path: "/battle",
+          path: "/battle/:id",
           element: <BattlePage/>
         }
       ],

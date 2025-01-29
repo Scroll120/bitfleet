@@ -25,7 +25,7 @@ export default function ProfilePage() {
     }
 
     const startBattle = (fleetId) => {
-        navigate("/battle", {state: { fleetId }});
+        navigate(`/battle/${fleetId}`);
     };
 
     return (

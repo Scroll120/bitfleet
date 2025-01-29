@@ -1,22 +1,38 @@
 import "./BattlePage.css";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
 
 export default function BattlePage() {
-    const location = useLocation();
-    const fleetId = location.state?.fleetId;
+    const {id} = useParams();
     const [battleData, setBattleData] = useState(null);
 
     useEffect(() => {
-        console.log(fleetId);
+        if (!id) return;
+
+        fetchBattleData();
     }, [])
+
+    const fetchBattleData = async () => {
+        const response = await fetch(`/api/battle/start`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({id}),
+        })
+        const data = await response.json();
+        setBattleData(data);
+    }
 
     return (
 
         <div>
             <p>Battle</p>
+            {battleData && (
+                <p>{battleData.playerFleet.name}, {battleData.enemyFleet.name}</p>
+            )}
         </div>
     )
 }
