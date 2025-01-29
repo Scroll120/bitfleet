@@ -107,6 +107,9 @@ Before you begin, ensure you have met the following requirements:
 - Storing and selecting your ships and fleets!
 - Engaging randomly selected fleets of other players!
 
+![placeholder-image](https://i.imgur.com/qJ8Fh8W.png)
+*Placeholder ingame image until the frontend is reworked*
+
 <!-- ROADMAP -->
 ## Roadmap
 
