@@ -25,4 +25,5 @@ public class AdmiralController {
 
     @GetMapping("/{admiralId}")
     public AdmiralDTO getAdmiralById(@PathVariable long admiralId) { return admiralService.getAdmiralById(admiralId); }
+
 }

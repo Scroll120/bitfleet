@@ -66,7 +66,7 @@ public class Ship {
     @Getter
     @Setter
     @ManyToOne
-    @JoinColumn(name = "fleet_id", nullable = true)
+    @JoinColumn(name = "fleet_id")
     private Fleet fleet;
 
     public Ship() {}

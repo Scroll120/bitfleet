@@ -21,3 +21,6 @@ INSERT INTO ship (id, name, type, hp, la, ha, ta, org, vet, is_repairing, is_sun
 
 INSERT INTO ship (id, name, type, hp, la, ha, ta, org, vet, is_repairing, is_sunken, value, admiral_id, fleet_id) VALUES (8, 'aa_ship_5', 'CAPITAL', 130, 45, 35, 25, 70, 0.8, false, false, 250, 0, 4);
 INSERT INTO ship (id, name, type, hp, la, ha, ta, org, vet, is_repairing, is_sunken, value, admiral_id, fleet_id) VALUES (9, 'aa_ship_6', 'SCREEN', 95, 25, 20, 15, 55, 0.5, false, false, 120, 0, 4);
+
+INSERT INTO ship (id, name, type, hp, la, ha, ta, org, vet, is_repairing, is_sunken, value, admiral_id) VALUES (10, 'reserve1', 'CAPITAL', 130, 45, 35, 25, 70, 0.8, false, false, 250, 0);
+INSERT INTO ship (id, name, type, hp, la, ha, ta, org, vet, is_repairing, is_sunken, value, admiral_id) VALUES (11, 'reserve2', 'SCREEN', 95, 25, 20, 15, 55, 0.5, false, false, 120, 0);
